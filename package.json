@@ -12,11 +12,14 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
     "@nextui-org/react": "^2.2.9",
+    "@nextui-org/tabs": "^2.0.26",
+    "@react-stately/collections": "^3.10.4",
     "framer-motion": "^10.16.16",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
+    "react-tabs": "^6.0.2",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
