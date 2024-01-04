@@ -43,7 +43,7 @@ export default function Home() {
               <div className='w-1/2 flex justify-center items-center'>
                 <div className='max-w-md'>
                   
-                  <h1 className='text-4xl font-bold pb-4 '>We're committed to your health and well-being</h1> 
+                  <h1 className='text-4xl font-bold pb-4'>We are committed to your health and well-being</h1> 
                     
                     <p className='font-medium pb-3'>We are dedicated to providing comprehensive healthcare services tailored specifically to address the unique needs of women. Our clinics are committed to promoting and safeguarding women’s health at every stage of life. Our team of experienced healthcare professionals specializes in a wide range of women’s health issues, from routine check-ups and preventive care to specialized treatments and interventions.</p> 
 
