@@ -4,14 +4,15 @@
 const nextConfig = {
     // Your other Next.js configuration options...
   
-    // Add the following exportPathMap configuration
-    exportPathMap: async function () {
-      return {
-        '/': { page: '/' },
-        // Add other pages as needed
-      }
+    // Replace exportPathMap with generateStaticParams
+    async generateStaticParams() {
+      // Specify the paths you want to export
+      return [
+        '/',
+        // Add other paths as needed
+      ];
     },
-  }
+  };
   
   module.exports = nextConfig;
   
