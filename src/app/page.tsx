@@ -32,7 +32,7 @@ export default function Home() {
             <div className='flex container max-w-[1280px] mx-auto pt-8 pb-8'>
               <div className='w-1/2 flex justify-center'>
                 <Image
-                  src="./Images/img-3.jpg"
+                  src="/Images/img-3.jpg"
                   width={640}
                   height={400}
                   alt="Meet the Team"
@@ -84,27 +84,27 @@ export default function Home() {
               <div className='grid grid-rows-1 grid-flow-col gap-4 items-center'>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
@@ -136,7 +136,7 @@ export default function Home() {
                     </button>
 
                     <div className='flex justify-end'>
-                      <Image className='pb-2' src="./Images/hand-drawn-arrow1.png" alt="Gynaecology" width={200} height={64} />
+                      <Image className='pb-2' src="/Images/hand-drawn-arrow1.png" alt="Gynaecology" width={200} height={64} />
                     </div>
 
                 </div>
