@@ -84,27 +84,27 @@ export default function Home() {
               <div className='grid grid-rows-1 grid-flow-col gap-4 items-center'>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="/SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
                   <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
                 </div>
 
