@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Other configurations...
-  
-    output: {
-      // Set the output directory for the exported files (default is 'out')
-      dir: 'out',
+    output: 'export',
+}
+
+// next.config.js
+module.exports = {
+    output: 'export',
+    images: {
+      disableStaticImages: true,
     },
+    // Other configurations...
   };
-  
-  module.exports = nextConfig;
+module.exports = nextConfig
