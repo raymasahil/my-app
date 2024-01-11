@@ -25,7 +25,7 @@ const MySwiper: React.FC = () => {
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className="mySwiper !h-screen mt-[-72px] !z-[1]"
+        className="mySwiper !h-screen mt-[-112px] !z-[1]"
         >
 
           <SwiperSlide className="flex w-full justify-center items-center bg-[url('/Images/bg2-big.jpg')] bg-cover bg-no-repeat"> 

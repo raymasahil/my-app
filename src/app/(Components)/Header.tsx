@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,12 +15,16 @@ const Header = () => {
   };
 
   return (
-    <header className="!z-[99]">
+    <header className="relative !z-[99] py-5">
+       <div className="absolute inset-0 z-2 h-170 bg-gradient-to-b from-[#00000080] to-transparent"></div>
       <nav className="p-0">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <div className="text-pink-500 !z-[999]">
-              <Link href="/"> Your Logo </Link>
+              <Link href="/"> 
+                <Image src="./SVG/Spandan-Logo-Text-Side.svg" alt="Spandan Maternity" width={200} height={64} />
+
+              </Link>
             </div>
             <div className="flex text-pink-500 !z-[999]">
               <div className="sm:hidden text-pink-500 cursor-pointer" onClick={toggleMenu}>
