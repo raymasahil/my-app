@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import Link from 'next/link';
 
 
 
@@ -84,28 +85,68 @@ export default function Home() {
               <div className='grid grid-rows-1 grid-flow-col gap-4 items-center'>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
-                  <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={90} height={90} />
+                  <h3 className='text-purple-900 text-2xl font-semibold'>Gynaecology</h3>
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
-                  <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={90} height={90} />
+                  <h3 className='text-purple-900 font-semibold'>Laparoscopy Surgery</h3>
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
-                  <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={90} height={90} />
+                  <h3 className='text-purple-900 font-semibold'>Male Infertility</h3>
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
-                  <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={90} height={90} />
+                  <h3 className='text-purple-900 font-semibold'>Women Infertility</h3>
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
                 </div>
 
                 <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={64} height={64} />
-                  <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={90} height={90} />
+                  <h3 className='text-purple-900 font-semibold'>Maternity</h3>
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
                 </div>
 
               </div>

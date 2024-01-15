@@ -26,7 +26,7 @@ const Header = () => {
 
               </Link>
             </div>
-            <div className="flex text-pink-500 !z-[999]">
+            <div className="flex text-white !z-[999]">
               <div className="sm:hidden text-pink-500 cursor-pointer" onClick={toggleMenu}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,16 +77,36 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Contact" onClick={closeMenu}>
-                    Services
+                  <Link href="/" onClick={closeMenu}>
+                    Insurance
                   </Link>
                 </li>
                 <li>
-
-                  <button className="mt-0 pt-2 pb-2 pl-4 pr-4 rounded-3xl text-white bg-pink-500 flex items-center">
-                    Contact Us
-                  </button>
-
+                  <Link href="/" onClick={closeMenu}>
+                    Facilities
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/About" onClick={closeMenu}>
+                    Treatments
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/About" onClick={closeMenu}>
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/Contact" onClick={closeMenu}>
+                    IVF Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/Contact" onClick={closeMenu}>
+                    <button className="mt-0 pt-2 pb-2 pl-4 pr-4 rounded-3xl text-white bg-pink-500 flex items-center">
+                      Contact Us
+                    </button>
+                  </Link>
                 </li>
                 
               </ul>
