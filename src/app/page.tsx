@@ -4,6 +4,9 @@ import Header from '@/app/(Components)/Header';
 import MySwiper from '@/app/(Components)/MySwiper';
 import Servies from '@/app/(Components)/Services';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeaf, faStethoscope, faAmbulance, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+
 
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
@@ -160,12 +163,13 @@ export default function Home() {
 
             {/* Parallex Section */}
             <section className="bg-[url('/Images/parallax-lab-image.jpg')] min-h-96 bg-fixed" >
-              <div className="container max-w-[1280px] mx-auto flex items-center min-h-96">
+              <div className="container max-w-[1280px] gap-10  mx-auto flex items-center min-h-96">
                 <div className="w-1/2 flex">
                   <Image src="/Images/doctor-1.png" width={570} height={616} alt="" />
                  </div>
                 <div className="w-1/2">
-                  <h3 className='mb-10'>
+                  <h3 className='mb-10 flex items-center text-[#27115f] w-[380px] font-bold text-2xl'>
+                    <FontAwesomeIcon icon={faQuoteLeft} className="mr-12 h-10 text-[#27115f]"></FontAwesomeIcon>
                     You could be Pregnant. Feel free to talk to us
                   </h3>
 
@@ -174,23 +178,23 @@ export default function Home() {
                     <div className='space-y-8'>
 
                       <div className='flex gap-6'>
-                        <div>icon</div>
+                        <div><FontAwesomeIcon icon={faLeaf} className="p-5 border-2 border-[#27115f] text-[#27115f] rounded-full w-5 h-5"></FontAwesomeIcon></div>
                         <div className='space-y-3'>
-                          <h4>Award Winning Service</h4>
+                          <h4 className='text-[#27115f] font-semibold'>Award Winning Service</h4>
                           <p>Duas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia</p>
                         </div>
                       </div>
                       <div className='flex gap-6'>
-                        <div>icon</div>
+                        <div><FontAwesomeIcon icon={faStethoscope} className="p-5 border-2 border-[#27115f] text-[#27115f] rounded-full w-5 h-5"></FontAwesomeIcon></div>
                         <div className='space-y-3'>
-                          <h4>Best Doctors</h4>
+                          <h4 className='text-[#27115f] font-semibold'>Best Doctors</h4>
                           <p>Duas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia</p>
                         </div>
                       </div>
                       <div className='flex gap-6'>
-                        <div>icon</div>
+                        <div><FontAwesomeIcon icon={faAmbulance} className="p-5 border-2 border-[#27115f] text-[#27115f] rounded-full w-5 h-5"></FontAwesomeIcon></div>
                         <div className='space-y-3'>
-                          <h4>Dedicated Emergency Care</h4>
+                          <h4 className='text-[#27115f] font-semibold'>Dedicated Emergency Care</h4>
                           <p>Duas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia</p>
                         </div>
                       </div>
