@@ -25,11 +25,12 @@ const MySwiper: React.FC = () => {
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className="mySwiper !h-screen mt-[-112px] !z-[1]"
+        className="mySwiper !h-screen !z-[1]"
+        // className="mySwiper !h-screen mt-[-135px] !z-[1]"
         >
 
           <SwiperSlide className="flex w-full justify-center items-center bg-[url('/Images/bg2-big.jpg')] bg-cover bg-no-repeat"> 
-            <div className='container mx-auto w-full h-full px-4 flex flex-row items-center'>
+            <div className='max-w-[1280px] mx-auto w-full h-full px-4 flex flex-row items-center'>
                 <div className='w-1/2 animate-fade-in'>
                   <h1 className='w-72 text-4xl font-bold pb-4'>Your well-being is our priority</h1> 
                   <p className='font-medium'>Promoting good health together.</p> 
@@ -45,7 +46,7 @@ const MySwiper: React.FC = () => {
           </SwiperSlide>
 
           <SwiperSlide className="flex w-full justify-center items-center bg-[url('/Images/bg3-big.jpg')] bg-cover bg-no-repeat"> 
-            <div className='container mx-auto w-full h-full px-4 flex flex-row items-center'>
+            <div className='max-w-[1280px] mx-auto w-full h-full px-4 flex flex-row items-center'>
                 <div className='w-1/2 animate-fade-in'>
                   <h1 className='w-[600px] text-4xl font-bold pb-4'>We are committed to your health and well-being</h1> 
                   <p className='font-medium w-96'>We are dedicated to providing comprehensive healthcare services tailored specifically to address the unique needs of women.</p> 

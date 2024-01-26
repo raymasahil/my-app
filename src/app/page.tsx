@@ -4,11 +4,15 @@ import Header from '@/app/(Components)/Header';
 import MySwiper from '@/app/(Components)/MySwiper';
 import Servies from '@/app/(Components)/Services';
 
+//import React from "react";
+import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf, faStethoscope, faAmbulance, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
-
 import React, { useRef, useState } from 'react';
+
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -156,6 +160,48 @@ export default function Home() {
             </div>
 
             {/* Services Section: Option - 2 */}
+            
+            <div className="max-w-[1280px] mx-auto flex w-full flex-col pt-14 pb-14">
+              <Tabs aria-label="Options">
+                <Tab key="gynaecology" title="Gynaecology">
+                  <Card>
+                    <CardBody>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </CardBody>
+                  </Card>  
+                </Tab>
+                <Tab key="laparoscopy-surgery" title="Laparoscopy Surgery">
+                  <Card>
+                    <CardBody>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </CardBody>
+                  </Card>  
+                </Tab>
+                <Tab key="male-infertility" title="Male Infertility">
+                  <Card>
+                    <CardBody>
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </CardBody>
+                  </Card>  
+                </Tab>
+                <Tab key="women-infertility" title="Women Infertility">
+                  <Card>
+                    <CardBody>
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </CardBody>
+                  </Card>  
+                </Tab>
+                <Tab key="maternity" title="Maternity">
+                  <Card>
+                    <CardBody>
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </CardBody>
+                  </Card>  
+                </Tab>
+              </Tabs>
+            </div> 
+
+
                        
             {/* <div className='container max-w-[1280px] mx-auto pt-8 pb-8'>
               <Servies />
@@ -364,6 +410,8 @@ export default function Home() {
 
 
             </div>
+
+             
 
 
           </div>
