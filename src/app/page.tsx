@@ -89,11 +89,12 @@ export default function Home() {
                   <p className='font-medium'>Tailored care for every stage of life</p> 
               </div>
 
-              <div className='grid grid-rows-1 grid-flow-col gap-4 items-center'>
+              <div className='grid grid-rows-1 grid-flow-col gap-6 items-center'>
 
-                <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={90} height={90} />
-                  <h3 className='text-purple-900 font-semibold'>Gynaecology</h3>
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Gynaecology</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
                   <Link href="/"> 
                     <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
@@ -104,9 +105,11 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/laparoscopy-icon.svg" alt="Laparoscopy Surgery" width={90} height={90} />
-                  <h3 className='text-purple-900 font-semibold'>Laparoscopy Surgery</h3>
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/laparoscopy-icon.svg" alt="Laparoscopy Surgery" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Laparoscopy Surgery</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  
                   <Link href="/"> 
                     <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
@@ -117,9 +120,11 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/Male-Infertility-icon.svg" alt="Male Infertility" width={90} height={90} />
-                  <h3 className='text-purple-900 font-semibold'>Male Infertility</h3>
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/Male-Infertility-icon.svg" alt="Laparoscopy Surgery" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Male Infertility</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  
                   <Link href="/"> 
                     <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
@@ -130,9 +135,11 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/infertility-icon.svg" alt="Women Infertility" width={90} height={90} />
-                  <h3 className='text-purple-900 font-semibold'>Women Infertility</h3>
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/infertility-icon.svg" alt="Women Infertility" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Women Infertility</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  
                   <Link href="/"> 
                     <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
@@ -143,9 +150,11 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className='bg-purple-50 rounded flex flex-col items-center hover:shadow-md transition-all duration-300 pt-6 pb-6 '>
-                  <Image className='pb-2' src="./SVG/Maternity-baby-icon.svg" alt="Maternity" width={90} height={90} />
-                  <h3 className='text-purple-900 font-semibold'>Maternity</h3>
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/Maternity-baby-icon.svg" alt="Maternity" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Maternity</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  
                   <Link href="/"> 
                     <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
@@ -155,13 +164,16 @@ export default function Home() {
                     </button>
                   </Link>
                 </div>
+
+
+                
 
               </div>
             </div>
 
             {/* Services Section: Option - 2 */}
             
-            <div className="max-w-[1280px] mx-auto flex w-full flex-col pt-14 pb-14">
+            {/* <div className="max-w-[1280px] mx-auto flex w-full flex-col pt-14 pb-14">
               <Tabs aria-label="Options">
                 <Tab key="gynaecology" title="Gynaecology">
                   <Card>
@@ -199,7 +211,7 @@ export default function Home() {
                   </Card>  
                 </Tab>
               </Tabs>
-            </div> 
+            </div>  */}
 
 
                        
@@ -255,7 +267,7 @@ export default function Home() {
 
 
             {/* Testimonials Section */}
-            <div className='container max-w-[1280px] gap-7 flex mx-auto pt-12 pb-8 items-center'>
+            <div className='container max-w-[1280px] gap-7 flex mx-auto pt-12 pb-8 my-28 items-center'>
 
               <div className='w-2/5'>
                 <div className='text-left'>
@@ -411,6 +423,36 @@ export default function Home() {
 
             </div>
 
+            <section className='bg-purple-50 pt-20 pb-20'>
+              <div className="max-w-[1280px] mx-auto">
+
+                  <div className='text-center mb-3'>
+                    <h1 className='text-2xl mb-2 font-bold'>Insurance Approved Consultant</h1> 
+                    <p className='text-xs pb-6'>* All product names, logos, brands, trademarks and registered trademarks are property of their respective owners.</p>
+                  </div>
+
+                  <div className='grid grid-rows-1 grid-flow-col items-center gap-4'>
+                    
+                    <div className='flex justify-center'>
+                      <Image src="/Images/client-img3.png" width={100} height={100} alt="cigna" />
+                    </div>
+                    <div className='flex justify-center'>
+                      <Image src="/Images/client-img3.png" width={100} height={100} alt="cigna" />
+                    </div>
+                    <div className='flex justify-center'>
+                      <Image src="/Images/client-img3.png" width={100} height={100} alt="cigna" />
+                    </div>
+                    <div className='flex justify-center'>
+                      <Image src="/Images/client-img3.png" width={100} height={100} alt="cigna" />
+                    </div>
+                    <div className='flex justify-center'>
+                      <Image src="/Images/client-img3.png" width={100} height={100} alt="cigna" />
+                    </div>
+
+                  </div>
+
+              </div>
+            </section>
              
 
 
