@@ -4,8 +4,23 @@ import './globals.css'
 import Header from '@/app/(Components)/Header';
 import Footer from '@/app/(Components)/Footer';
 
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+// Font files can be colocated inside of `pages`
+const SpandanFont = localFont({ src: '../font/FertigoPro-Regular2.otf' })
+
+
+// const inter = Inter({ subsets: ['latin'] })
+
+const roboto = localFont({
+  src: [
+    {
+      path: '../font/FertigoPro-Regular2.otf',
+      weight: '100',
+      style: 'normal',
+    }
+  ],
+})
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -19,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={SpandanFont.className}>
 
 
         <Header />

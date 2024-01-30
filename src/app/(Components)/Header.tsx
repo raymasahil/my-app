@@ -199,7 +199,7 @@ const Header: React.FC = () => {
     <header className="fixed w-full top-4 z-50 transition duration-300 ease-in-out">
       {/* <div className="absolute inset-0 z-2 h-170 bg-gradient-to-b from-[#00000080] to-transparent"></div> */}
       <nav className="p-0">
-        <div className="max-w-[1280px] mx-auto bg-white px-5 py-3 rounded-2xl ">
+        <div className="max-w-[1280px] mx-auto bg-white px-5 py-3 rounded-2xl drop-shadow-md">
           <div className="flex justify-between items-center">
             <div className="text-pink-500 !z-[999]">
               <Link href="/">
@@ -232,11 +232,6 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
-                    Home
-                  </Link>
-                </li>
-                <li>
                   <Link href="/About" onClick={closeMenu}>
                     About
                   </Link>
@@ -262,16 +257,17 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <Link href="/Contact" onClick={closeMenu}>
-                    IVF Center
+                     Contact 
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Contact" onClick={closeMenu}>
+                  <Link href="/" onClick={closeMenu}>
                     <button className="mt-0 pt-2 pb-2 pl-4 pr-4 rounded-3xl text-white bg-pink-500 flex items-center">
-                      Contact Us
+                      IVF Center
                     </button>
                   </Link>
                 </li>
+                
               </ul>
             </div>
           </div>

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'FertigoPro';
+    src: url('/fonts/FertigoPro-Regular2.otf') format('truetype');
+    /* You can add more src declarations for different font file formats */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* You can define other styles using your custom font */
+  body {
+    font-family: 'FertigoPro', sans-serif;
+  }
+  

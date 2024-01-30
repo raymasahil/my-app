@@ -40,6 +40,9 @@ const MySwiper: React.FC = () => {
                       </svg>
 
                   </button>
+                  <div className='mt-14 w-64'>
+                      <Image className='drop-shadow-md' src="/Images/Safety.png" width={130} height={130} alt="Safety" />
+                    </div>
                 </div>
                 <div className='w-1/2'></div>
             </div>

@@ -4,6 +4,8 @@ import Header from '@/app/(Components)/Header';
 import MySwiper from '@/app/(Components)/MySwiper';
 import Servies from '@/app/(Components)/Services';
 
+
+
 //import React from "react";
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 
@@ -37,10 +39,10 @@ export default function Home() {
             </section>
 
             {/* About Section */}
-            <div className='flex container max-w-[1280px] mx-auto pt-8 pb-8'>
-              <div className='w-1/2 flex justify-center'>
+            <div className='flex container max-w-[1280px] mx-auto pt-8 pb-8 gap-20'>
+              <div className='w-2/5 flex justify-center'>
                 <Image
-                  src="/Images/img-3.jpg"
+                  src="/Images/Surabhi-Bg.png"
                   width={640}
                   height={400}
                   alt="Meet the Team"
@@ -48,24 +50,38 @@ export default function Home() {
                 />
               </div>
               
-              <div className='w-1/2 flex justify-center items-center'>
-                <div className='max-w-md'>
-                  
-                  <h1 className='text-4xl font-bold pb-4'>We are committed to your health and well-being</h1> 
-                    
-                    <p className='font-medium pb-3'>We are dedicated to providing comprehensive healthcare services tailored specifically to address the unique needs of women. Our clinics are committed to promoting and safeguarding women’s health at every stage of life. Our team of experienced healthcare professionals specializes in a wide range of women’s health issues, from routine check-ups and preventive care to specialized treatments and interventions.</p> 
+              <div className='w-3/5 flex justify-center items-center'>
+                <div className=''>
 
-                    <p>We understand that women’s health encompasses not only physical well-being but also emotional and mental health. That’s why we offer a holistic approach to healthcare that emphasizes education, prevention, and personalized care.</p>
-                    
-                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-4 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
-                        Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-
-                    </button>
-
-                  
+                  <p className='text-sm mb-2 text-pink-500'>About Us</p>
+                  <div className='border-l-2 border-pink-500 pl-3'>
+                    <h1 className='text-4xl  font-bold'>Dr. Surbhi Vegad</h1> 
+                    <p className='mb-3 text-sm'>Gynecologist And Obstetrician</p>
                   </div>
+
+                  
+                  
+                  <p className='font-medium pb-3'>We are dedicated to providing comprehensive healthcare services tailored specifically to address the unique needs of women. Our clinics are committed to promoting and safeguarding women’s health at every stage of life. Our team of experienced healthcare professionals specializes in a wide range of women’s health issues, from routine check-ups and preventive care to specialized treatments and interventions.</p> 
+
+                  <p>We understand that women’s health encompasses not only physical well-being but also emotional and mental health. That’s why we offer a holistic approach to healthcare that emphasizes education, prevention, and personalized care.</p>
+                  
+                  <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-4 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                      Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+
+                  </button>
+
+                  <div className='flex items-center gap-4 mt-12'>
+                      <div>
+                        <Image src="/Images/Safety.png" width={140} height={140} alt="Safety" />
+                      </div>
+                      <div className='w-96'>
+                        <p>National Accreditation Board for Hospitals & Healthcare Providers (NABH)</p>
+                      </div>
+                  </div>
+                  
+                </div>
 
               </div>
             </div>
@@ -74,7 +90,7 @@ export default function Home() {
             <div className='container max-w-[1280px] mx-auto pt-14 pb-14'>
 
               <div className='flex flex-col items-center pt-11 pb-11'>
-                <p className='w-3/4 text-center pb-3 text-2xl font-sans'>“Our mission is to empower women to take control of their health, making informed decisions that lead to happier, healthier lives.”</p>
+                <p className='w-3/4 text-center pb-3 text-2xl'>“Our mission is to empower women to take control of their health, making informed decisions that lead to happier, healthier lives.”</p>
                 <p className='font-semibold text-purple-900 '>Dr Surbhi Vegad, MD</p>
 
               </div>
@@ -228,7 +244,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <h3 className='mb-10 flex items-center text-[#27115f] w-[380px] font-bold text-2xl'>
                     <FontAwesomeIcon icon={faQuoteLeft} className="mr-12 h-10 text-[#27115f]"></FontAwesomeIcon>
-                    You could be Pregnant. Feel free to talk to us
+                      Feel free to talk to us
                   </h3>
 
                   <div>
