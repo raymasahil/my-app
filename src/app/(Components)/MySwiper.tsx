@@ -29,20 +29,32 @@ const MySwiper: React.FC = () => {
         // className="mySwiper !h-screen mt-[-135px] !z-[1]"
         >
 
-          <SwiperSlide className="flex w-full justify-center items-center bg-[url('/Images/bg2-big.jpg')] bg-cover bg-no-repeat"> 
+          <SwiperSlide className="flex w-full justify-center items-center bg-[url('/Images/Main-Banner-Website-Banner.jpg')] bg-cover bg-no-repeat"> 
             <div className='max-w-[1280px] mx-auto w-full h-full px-4 flex flex-row items-center'>
                 <div className='w-1/2 animate-fade-in'>
-                  <h1 className='w-72 text-4xl font-bold pb-4'>Your well-being is our priority</h1> 
-                  <p className='font-medium'>Promoting good health together.</p> 
-                  <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-3 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
-                    Button <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
 
-                  </button>
-                  <div className='mt-14 w-64'>
-                      <Image className='drop-shadow-md' src="/Images/Safety.png" width={130} height={130} alt="Safety" />
-                    </div>
+                  <div className=''>
+
+                    <h1 className='w-72 text-4xl font-bold pb-4'>Your well-being is our priority</h1> 
+                    <p className='font-medium'>Promoting good health together.</p> 
+                    {/* <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-3 pt-2 pb-2 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                      Button <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+
+                    </button> */}
+
+                  </div>
+                  
+                  <div className='flex items-center gap-4 absolute mt-40'>
+                      <div>
+                        <Image src="/Images/Safety.png" width={110} height={110} alt="Safety" />
+                      </div>
+                      <div className='w-96'>
+                        <p>National Accreditation Board for Hospitals & Healthcare Providers (NABH)</p>
+                      </div>
+                  </div>
+
                 </div>
                 <div className='w-1/2'></div>
             </div>

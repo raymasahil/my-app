@@ -4,13 +4,13 @@ import Header from '@/app/(Components)/Header';
 import MySwiper from '@/app/(Components)/MySwiper';
 import Servies from '@/app/(Components)/Services';
 
-
+import '@/style/global.css';
 
 //import React from "react";
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLeaf, faStethoscope, faAmbulance, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faLeaf, faStethoscope, faAmbulance, faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 import React, { useRef, useState } from 'react';
 
@@ -39,7 +39,23 @@ export default function Home() {
             </section>
 
             {/* About Section */}
+
+            <div className='text-center pt-11 pb-6 w-full'>
+              {/* <p className='text-sm mb-2 text-pink-500'>About Us</p> */}
+
+              
+                <h1 className='text-4xl  font-bold'>Dr. Surbhi Vegad</h1> 
+                <p className='mb-8 text-sm text-pink-500'>Gynecologist And Obstetrician</p>
+                <div className='flex justify-center heading-title'>
+                  <span>
+                    <Image className='mx-auto' src="/Images/Group-98.png" alt="" width={40} height={40} />
+                  </span>
+                </div>
+
+            </div>
+
             <div className='flex container max-w-[1280px] mx-auto pt-8 pb-8 gap-20'>
+
               <div className='w-2/5 flex justify-center'>
                 <Image
                   src="/Images/Surabhi-Bg.png"
@@ -53,15 +69,10 @@ export default function Home() {
               <div className='w-3/5 flex justify-center items-center'>
                 <div className=''>
 
-                  <p className='text-sm mb-2 text-pink-500'>About Us</p>
-                  <div className='border-l-2 border-pink-500 pl-3'>
-                    <h1 className='text-4xl  font-bold'>Dr. Surbhi Vegad</h1> 
-                    <p className='mb-3 text-sm'>Gynecologist And Obstetrician</p>
-                  </div>
+                   
+                  <p className='font-medium pb-3'>We are dedicated to providing comprehensive healthcare services tailored specifically to address the unique needs of women. </p> 
 
-                  
-                  
-                  <p className='font-medium pb-3'>We are dedicated to providing comprehensive healthcare services tailored specifically to address the unique needs of women. Our clinics are committed to promoting and safeguarding women’s health at every stage of life. Our team of experienced healthcare professionals specializes in a wide range of women’s health issues, from routine check-ups and preventive care to specialized treatments and interventions.</p> 
+                  <p className='font-medium pb-3'>Our clinics are committed to promoting and safeguarding women’s health at every stage of life. Our team of experienced healthcare professionals specializes in a wide range of women’s health issues, from routine check-ups and preventive care to specialized treatments and interventions.</p> 
 
                   <p>We understand that women’s health encompasses not only physical well-being but also emotional and mental health. That’s why we offer a holistic approach to healthcare that emphasizes education, prevention, and personalized care.</p>
                   
@@ -72,14 +83,14 @@ export default function Home() {
 
                   </button>
 
-                  <div className='flex items-center gap-4 mt-12'>
+                  {/* <div className='flex items-center gap-4 mt-12'>
                       <div>
                         <Image src="/Images/Safety.png" width={140} height={140} alt="Safety" />
                       </div>
                       <div className='w-96'>
                         <p>National Accreditation Board for Hospitals & Healthcare Providers (NABH)</p>
                       </div>
-                  </div>
+                  </div> */}
                   
                 </div>
 
@@ -87,32 +98,42 @@ export default function Home() {
             </div>
 
             {/* Services Section */}
-            <div className='container max-w-[1280px] mx-auto pt-14 pb-14'>
+            <div className='container max-w-[1280px] mx-auto mt-2 mb-24'>
 
-              <div className='flex flex-col items-center pt-11 pb-11'>
+              {/* <div className='flex flex-col items-center pt-11 pb-11'>
                 <p className='w-3/4 text-center pb-3 text-2xl'>“Our mission is to empower women to take control of their health, making informed decisions that lead to happier, healthier lives.”</p>
                 <p className='font-semibold text-purple-900 '>Dr Surbhi Vegad, MD</p>
 
-              </div>
+              </div> */}
 
               {/* Add a vertical line */}
-              <div className='flex justify-center'>
+              {/* <div className='flex justify-center'>
                 <div className="border-l border-yellow-700 h-36 mx-4"></div>
+              </div> */}
+
+              <div className='bg-purple-50 pl-10 mb-6 rounded flex justify-between items-end'>
+
+                <div className='pb-10'>
+                  <h1 className='text-5xl font-bold text-purple-900 mb-2'>Things to Know</h1> 
+                  <p className='font-medium text-pink-500'>Tailored care for every stage of life</p> 
+                </div>
+
+                <div className='mask-image'>
+                  <div className='mask'>
+                    <Image src="/Images/hero-img1.jpg" width={450} height={450} alt="" />
+                  </div>
+                </div>
+
               </div>
 
-              <div className='text-center pt-11 pb-6'>
-                  <h1 className='text-4xl font-bold'>Services We Provide</h1> 
-                  <p className='font-medium'>Tailored care for every stage of life</p> 
-              </div>
-
-              <div className='grid grid-rows-1 grid-flow-col gap-6 items-center'>
+              <div className='grid grid-rows-2 grid-flow-col gap-6 items-center'>
 
                 <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
                   <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={70} height={70} />
                   <h3 className='text-purple-900 font-semibold mb-2'>Gynaecology</h3>
-                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
                   <Link href="/"> 
-                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
@@ -124,10 +145,10 @@ export default function Home() {
                 <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
                   <Image className='pb-2' src="./SVG/laparoscopy-icon.svg" alt="Laparoscopy Surgery" width={70} height={70} />
                   <h3 className='text-purple-900 font-semibold mb-2'>Laparoscopy Surgery</h3>
-                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
                   
                   <Link href="/"> 
-                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
@@ -139,10 +160,10 @@ export default function Home() {
                 <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
                   <Image className='pb-2' src="./SVG/Male-Infertility-icon.svg" alt="Laparoscopy Surgery" width={70} height={70} />
                   <h3 className='text-purple-900 font-semibold mb-2'>Male Infertility</h3>
-                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
                   
                   <Link href="/"> 
-                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
@@ -154,10 +175,10 @@ export default function Home() {
                 <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
                   <Image className='pb-2' src="./SVG/infertility-icon.svg" alt="Women Infertility" width={70} height={70} />
                   <h3 className='text-purple-900 font-semibold mb-2'>Women Infertility</h3>
-                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
                   
                   <Link href="/"> 
-                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
@@ -169,10 +190,85 @@ export default function Home() {
                 <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
                   <Image className='pb-2' src="./SVG/Maternity-baby-icon.svg" alt="Maternity" width={70} height={70} />
                   <h3 className='text-purple-900 font-semibold mb-2'>Maternity</h3>
-                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various gynecological conditions such as menstrual disorders, endometriosis and infections.</p>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
                   
                   <Link href="/"> 
-                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
+                </div>
+
+
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/pregnant-icon.svg" alt="Gynaecology" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Gynaecology</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
+                </div>
+
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/laparoscopy-icon.svg" alt="Laparoscopy Surgery" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Laparoscopy Surgery</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
+                  
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
+                </div>
+
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/Male-Infertility-icon.svg" alt="Laparoscopy Surgery" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Male Infertility</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
+                  
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
+                </div>
+
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/infertility-icon.svg" alt="Women Infertility" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Women Infertility</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
+                  
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
+                        Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                  </Link>
+                </div>
+
+                <div className='bg-purple-50 rounded flex flex-col hover:shadow-md transition-all duration-300 p-6 '>
+                  <Image className='pb-2' src="./SVG/Maternity-baby-icon.svg" alt="Maternity" width={70} height={70} />
+                  <h3 className='text-purple-900 font-semibold mb-2'>Maternity</h3>
+                  <p className='text-purple-900 text-sm'>Gynecologists diagnose and manage various</p>
+                  
+                  <Link href="/"> 
+                    <button className="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-sm ransition-all duration-300 mt-2 pt-1 pb-1 rounded-3xl pl-4 pr-4 shadow-lg flex items-center">
                         Know More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
@@ -242,14 +338,14 @@ export default function Home() {
                   <Image src="/Images/doctor-1.png" width={570} height={616} alt="" />
                  </div>
                 <div className="w-1/2">
-                  <h3 className='mb-10 flex items-center text-[#27115f] w-[380px] font-bold text-2xl'>
-                    <FontAwesomeIcon icon={faQuoteLeft} className="mr-12 h-10 text-[#27115f]"></FontAwesomeIcon>
-                      Feel free to talk to us
+                  <h3 className='mb-10 flex items-center text-[#27115f] w-[500px] font-bold text-2xl'>
+                    {/* <FontAwesomeIcon icon={faQuoteLeft} className="mr-12 h-10 text-[#27115f]"></FontAwesomeIcon> */}
+                    Introducing Bavishi Fertility Institute (BFI) - An IVF Center in Bhuj
                   </h3>
 
                   <div>
                     
-                    <div className='space-y-8'>
+                    {/* <div className='space-y-8'>
 
                       <div className='flex gap-6'>
                         <div><FontAwesomeIcon icon={faLeaf} className="p-5 border-2 border-[#27115f] text-[#27115f] rounded-full w-5 h-5"></FontAwesomeIcon></div>
@@ -273,7 +369,31 @@ export default function Home() {
                         </div>
                       </div>
 
+                    </div> */}
+
+                    <div className='space-y-8'>
+
+                      <div className='flex gap-6'>
+                        <div className='space-y-3'>
+                          <p>We work with the principles of confidentiality, responsibility and professionalism. We are building families with technology and trust.</p>
+                        </div>
+                      </div>
+
+                      <div className='flex gap-6'>
+                        <div className='space-y-3'>
+                          <p>Our state-of-the-art reproductive medicine facilities / Fertility clinics – provide highly individualized, customized, personalized treatment with a holistic and minimalistic approach, since 1986.</p>
+                        </div>
+                      </div>
+                      
+                      <div className='flex gap-6'>
+                        <div className='space-y-3'>
+                          <p>As a leading IVF clinic in Bhuj, founded and led by the well-known experts of <span className='text-pink-500 font-bold'>Bavishi family</span> / Dr Himanshu Bavishi & Dr Falguni Bavishi, all BFI clinics offer meticulous attention of the highest order in a pleasant and avant-garde environment to make your treatment Simple, Safe, Smart and Successful.</p>
+                        </div>
+                      </div>
+                      
+
                     </div>
+
                   </div>
 
                 </div>
@@ -315,26 +435,35 @@ export default function Home() {
                 >
                   <SwiperSlide className='bg-purple-50 p-11 rounded'>
                     <div className=''>
-                        <div className='mb-5'>
-                          <h3 className='text-lg font-semibold pb-1'>Mahendra Karwa</h3>
+                        <div className='mb-5 flex items-center'>
 
-                          <div className='flex'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
+                          <div className='bg-[#d9d6fe] rounded-full w-14 h-14 mr-4 flex items-center justify-center'>
+                            <FontAwesomeIcon icon={faQuoteRight} className="absolute w-5 h-5 text-pink-500"></FontAwesomeIcon>
                           </div>
+
+                          <div>
+
+                            <h3 className='text-lg font-semibold pb-1'>Mahendra Karwa</h3>
+                            <div className='flex'>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+
+                          </div>
+                          
                         </div>
 
                         <div className='text-left'>
@@ -355,26 +484,35 @@ export default function Home() {
 
                   <SwiperSlide className='bg-purple-50 p-11 rounded'>
                     <div className=''>
-                        <div className='mb-5'>
-                          <h3 className='text-lg font-semibold pb-1'>Mahendra Karwa</h3>
+                        <div className='mb-5 flex items-center'>
 
-                          <div className='flex'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
+                          <div className='bg-[#d9d6fe] rounded-full w-14 h-14 mr-4 flex items-center justify-center'>
+                            <FontAwesomeIcon icon={faQuoteRight} className="absolute w-5 h-5 text-pink-500"></FontAwesomeIcon>
                           </div>
+
+                          <div>
+
+                            <h3 className='text-lg font-semibold pb-1'>Mahendra Karwa</h3>
+                            <div className='flex'>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+
+                          </div>
+                          
                         </div>
 
                         <div className='text-left'>
@@ -395,26 +533,35 @@ export default function Home() {
 
                   <SwiperSlide className='bg-purple-50 p-11 rounded'>
                     <div className=''>
-                        <div className='mb-5'>
-                          <h3 className='text-lg font-semibold pb-1'>Mahendra Karwa</h3>
+                        <div className='mb-5 flex items-center'>
 
-                          <div className='flex'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
-                            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                            </svg>
+                          <div className='bg-[#d9d6fe] rounded-full w-14 h-14 mr-4 flex items-center justify-center'>
+                            <FontAwesomeIcon icon={faQuoteRight} className="absolute w-5 h-5 text-pink-500"></FontAwesomeIcon>
                           </div>
+
+                          <div>
+
+                            <h3 className='text-lg font-semibold pb-1'>Mahendra Karwa</h3>
+                            <div className='flex'>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FAC515" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+
+                          </div>
+                          
                         </div>
 
                         <div className='text-left'>

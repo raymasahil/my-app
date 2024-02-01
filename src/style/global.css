@@ -1,13 +1,89 @@
-@font-face {
-    font-family: 'FertigoPro';
-    src: url('/fonts/FertigoPro-Regular2.otf') format('truetype');
-    /* You can add more src declarations for different font file formats */
-    font-weight: normal;
-    font-style: normal;
-  }
+.horizontal-line {
+  position: relative;
+}
+
+.horizontal-line::before,
+.horizontal-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid #f0f0f0;
+    display: inline-block;
+    width: 203px;
+    height: 2px;
+    top: 0;
+    margin: auto 0;
+    z-index: 0;
+}
+
+.horizontal-line::before {
+  top: 0;
+}
+
+.horizontal-line::after {
+  bottom: 0;
+}
+
+@media (min-width: 958px){
+
+.mask {
+
+  -webkit-mask-image: url('/Images/mask-img1.png'); /* Mask image */
+            mask-image: url('/Images/mask-img1.png'); /* Mask image */
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    -webkit-mask-position: center right;
+            mask-position: center right;
+             
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;  
   
-  /* You can define other styles using your custom font */
-  body {
-    font-family: 'FertigoPro', sans-serif;
-  }
-  
+}
+
+.mask-image .mask {
+  position: relative;
+  height: 315px !important;
+}
+
+.flex.justify-center.heading-title {
+  position: relative; /* Added relative positioning */
+}
+
+.heading-title {
+  position: relative;
+  clear: both;
+  display: block;
+  top: -10px;
+  width: 470px;
+  margin: 0 auto;
+}
+.heading-title span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #f0f0f0;
+  display: inline-block;
+  width: 203px;
+  height: 2px;
+  top: 0;
+  margin: auto 0;
+  z-index: 0;
+}
+
+.heading-title span:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid #f0f0f0;
+  display: inline-block;
+  width: 203px;
+  height: 2px;
+  top: 0;
+  margin: auto 0;
+  z-index: 0;
+}
+
+}

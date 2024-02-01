@@ -265,6 +265,8 @@ const Header: React.FC = () => {
                     <button className="mt-0 pt-2 pb-2 pl-4 pr-4 rounded-3xl text-white bg-pink-500 flex items-center">
                       IVF Center
                     </button>
+
+                    {/* <Image src="/Images/bavishi-logo.png" alt="Bavishi Clinic" width={200} height={200} />  */}
                   </Link>
                 </li>
                 

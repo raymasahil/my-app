@@ -7,7 +7,8 @@ const Footer = () =>{
 
             <div className="container mx-auto max-w-[1280px] flex justify-between items-center space-x-10 text-white mt-24 mb-24">
                 <div className="w-1/2">
-                    <p>Empowering Her Health. Every Step of the Way</p>
+                    <Image className="mb-5" src="/Images/Spandan-white.png" width={200} height={200} alt="Spandan Maternity Home" />
+                    <p className="w-52">Empowering Her Health. Every Step of the Way</p>
                 </div>
                 <div className="flex w-1/2 space-x-9">
                     <div className="flex w-full items-center justify-center bg-pink-600 p-4 rounded">
@@ -71,7 +72,7 @@ const Footer = () =>{
                 
             </div>
 
-            <div className="w-full border-t !border-slate-50 mt-10 mb-10"></div>
+            <div className="w-full border-t !border-white mt-10 mb-10"></div>
 
             <div className="max-w-[1280px] mx-auto flex justify-between text-white pb-14">
                 <div>© Spandan Maternity Home 2024</div>
