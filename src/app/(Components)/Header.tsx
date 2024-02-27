@@ -242,7 +242,7 @@ const Header: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/Facilities" onClick={closeMenu}>
                     Facilities
                   </Link>
                 </li>
