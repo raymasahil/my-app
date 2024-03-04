@@ -14,10 +14,12 @@ export default function Contact() {
                     alt="Picture of the author"
                     className="w-full h-auto"
                 />
-                <h1 className="absolute bottom-20 left-0 text-white px-8 py-2 text-6xl">Meet Team</h1>
-                <p className="absolute bottom-10 left-0 text-white px-8 py-2">
-                    <Link href="/">Home</Link> &gt; <Link href="/MeetTeam">Meet Team</Link>
-                </p>
+                <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
+                    <p className='absolute bottom-20  text-white px-8 py-2 text-6xl'>Meet Team</p>
+                    <p className="absolute bottom-10 text-white px-8 py-2">
+                        <Link href="/">Home</Link> &gt; <Link href="/MeetTeam">Meet Team</Link>
+                    </p>
+                </div>
             </div>
             <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
             <div className="flex justify-center">

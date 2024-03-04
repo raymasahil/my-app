@@ -12,10 +12,12 @@ export default function About() {
                     alt="Picture of the author"
                     className="w-full h-auto"
                 />
-                <h1 className="absolute bottom-20 left-0 text-white px-8 py-2 text-6xl">About Us</h1>
-                <p className="absolute bottom-10 left-0 text-white px-8 py-2">
-                    <Link href="/">Home</Link> &gt; <Link href="/About">About us</Link>
-                </p>
+               <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
+                    <p className='absolute bottom-20  text-white px-8 py-2 text-6xl'>About Us</p>
+                    <p className="absolute bottom-10 text-white px-8 py-2">
+                        <Link href="/">Home</Link> &gt; <Link href="/About">About Us</Link>
+                    </p>
+                </div>
             </div>
             <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
                 <div className="box-border h-auto w-full p-4 flex">
@@ -53,8 +55,39 @@ export default function About() {
                                     <p className="flex-grow  ml-3" >Monday-Saturday</p>
                                 </div>
                             </div>
+                    </div>
+                </div>
+                <div>
+                    <p className='text-4xl text-center mt-16' style={{ color: 'rgb(1, 146, 144)'}}>Certificates</p>
+                </div>
+                <div className="flex justify-center">
+                    <div className="grid grid-cols-3 mx-0 mt-6 gap-4" >
+                        <div >
+                            <Image
+                                src="/images/certificate.jpg"
+                                width={400}
+                                height={400}
+                                alt="Picture of the Certificate"
+                            />
+                        </div>
+                        <div >
+                            <Image
+                                src="/images/certificate.jpg"
+                                width={400}
+                                height={400}
+                                alt="Picture of the Certificate"
+                            />
+                        </div>
+                        <div >
+                            <Image
+                                src="/images/certificate.jpg"
+                                width={400}
+                                height={400}
+                                alt="Picture of the Certificate"
+                            />
                         </div>
                     </div>
+                </div>
             </div>
         </div>
      
