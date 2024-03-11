@@ -21,31 +21,34 @@ export default function Facilities() {
                     alt="Picture of the author"
                     className="w-full h-auto"
                 />
-                <h1 className="absolute bottom-20 left-0 text-white px-8 py-2 text-6xl">Insurance</h1>
-                <p className="absolute bottom-10 left-0 text-white px-8 py-2">
-                    <Link href="/">Home</Link> &gt; <Link href="/Facilities">Facilities</Link>
-                </p>
+                <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
+                        <p className='absolute bottom-20  text-white px-8 py-2 text-6xl'>Facilities</p>
+                        <p className="absolute bottom-10 text-white px-8 py-2">
+                            <Link href="/">Home</Link> &gt; <Link href="/Facilities">Facilities</Link>
+                        </p>
+                    </div>
             </div>
             {/* main content start */}
                     <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
                         <div className="flex">
-                        <div className="w-[30%] h-auto p-4 border-2 ">
-                        <p className="p-4 mx-auto text-center text-white bg-[rgb(245,116,171)] rounded-lg">Available Facilities</p>
-                        <ul className="list-disc pl-6 mb-0">
-                            <li className="mb-2 mt-6">3D Live 4D & Colored sonography</li>
-                            <li className="mb-2">Laparoscopy Center</li>
-                            <li className="mb-2">Adolescent Counselling</li>
-                            <li className="mb-2">Stretcher Lift Facility</li>
-                            <li className="mb-2">3D Live 4D & Colored sonography</li>
-                            <li className="mb-2">Laparoscopy Center</li>
-                            <li className="mb-2">Adolescent Counselling</li>
-                            <li className="mb-2">Stretcher Lift Facility</li>
-                            <li className="mb-2">3D Live 4D & Colored sonography</li>
-                        </ul>
-                    </div>
+                            <div className="w-[25%] h-auto border-2 rounded-lg">
+                                <p className="p-8 text-center text-[rgb(236,72,153)] text-3xl ">Available Facilities</p>
+                                <ul className="list-disc pl-10 mb-0">
+                                    <li className="mb-2 text-[rgb(88,28,135)]">3D Live 4D & Colored sonography</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Laparoscopy Center</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Adolescent Counselling</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Stretcher Lift Facility</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">3D Live 4D & Colored sonography</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Laparoscopy Center</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Adolescent Counselling</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Stretcher Lift Facility</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">3D Live 4D & Colored sonography</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Adolescent Counselling</li>
+                                    <li className="mb-2 text-[rgb(88,28,135)]">Stretcher Lift Facility</li>
+                                </ul>
+                            </div>
 
-  
-                            <div className='w-[70%] h-[50%]'>
+                            <div className='w-[75%] h-[50%]'>
                             <Swiper
                                 spaceBetween={30}
                                 pagination={{
@@ -85,7 +88,6 @@ export default function Facilities() {
                                         width={1200}
                                         height={300}
                                         alt="Picture of the author"
-                                        
                                     />
                                 
 
@@ -101,13 +103,14 @@ export default function Facilities() {
                     </div>
                     <div className="grid grid-cols-4 gap-4 mt-8">
                         <div className="col-span-1">
-                            <Image
-                                src="/images/f1.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
+                        <Image
+                            src="/images/f1.png"
+                            width={305}
+                            height={250}
+                            alt="Picture of the author"
+                            className='rounded-xl'
+                        />
+                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)' }}>RECEPTION</p>
                         </div>
                         <div className="col-span-1">
                             <Image
@@ -115,6 +118,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -124,6 +128,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -133,6 +138,7 @@ export default function Facilities() {
                                 width={310}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -142,6 +148,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -151,6 +158,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -160,6 +168,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -169,6 +178,7 @@ export default function Facilities() {
                                 width={310}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -178,6 +188,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -187,6 +198,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -196,6 +208,7 @@ export default function Facilities() {
                                 width={305}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
@@ -205,6 +218,7 @@ export default function Facilities() {
                                 width={310}
                                 height={250}
                                 alt="Picture of the author"
+                                className='rounded-xl'
                             />
                             <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
                         </div>
