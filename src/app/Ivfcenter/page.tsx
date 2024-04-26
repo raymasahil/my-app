@@ -6,86 +6,74 @@ export default function About() {
     const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     return(
-        <div className="main-content bg-slate-200">
-           <div className='lg mx-auto relative'>
-                <Image
-                    src="/images/downloadbanner.jpg"
-                    width={500}
-                    height={200}
-                    alt="Picture of the author"
-                    className="w-full h-auto"
-                />
-                <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
-                    <p className='absolute bottom-20  text-white px-8 py-2 text-6xl'>IVF Center</p>
+        <div className="main-content">
+           <div className="relative w-full">
+                <div className="bg-[url('/Images/hospitalbanner2.jpg')] bg-cover bg-center min-h-96"></div>
+                <div className="absolute bottom-0 left-0 right-0" style={{ zIndex: '1', backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.1), #241B19 200%)', height: '100%' }}></div>
+
+
+
+                <div className='container max-w-[1280px] mx-auto relative z-10'>
+                    <p className='absolute bottom-20 text-white px-8 py-2 text-6xl'>The Best IVF Center in Bhuj</p>
                     <p className="absolute bottom-10 text-white px-8 py-2">
                         <Link href="/">Home</Link> &gt; <Link href="/Treatments">IVF Center</Link>
                     </p>
                 </div>
             </div>
-            <div className='container max-w-[1280px] mx-auto mt-14 mb-24 '>
-            <div className='relative'>
-            <Image
-                    src="/images/ivfbanner.jpg"
-                    width={500}
-                    height={500}
-                    alt="Picture of the author"
-                    className="w-full h-auto"
-                />
-            </div>
-            <div className='text-center mt-8'>
-                <p className='text-5xl' style={{ color: 'rgb(1, 146, 144)'}}>The Best IVF Center in Bhuj</p>
-                <div className="mx-auto w-80 border-b-4 border-teal-500 mt-4"></div>
-            </div>
-            <div className='mt-8 text-[rgb(88,28,135)]'>
-                <p>Bavishi Fertility Institute has evolved as THE BEST FERTILITY AND IVF CLINIC CHAIN of India with over 20,000+ successful pregnancies and counting! Today BFI has 7 states of the art, fertility institutes in 7 major cities of India.</p>
-            </div>
-            <div className='mt-4'>
-                <p className='text-gray-500'>Bavishi Fertility Institute spread its wings to the city of Bhuj in 2020. BFI Bhuj became a full-fledged fertility clinic of Bavishi Fertility Institute chain, the best fertility clinic chain in India.</p>
-            </div>
-            <div className='mt-4'>
-                <p className='text-gray-500'>BFI Bhuj had a huge number of successful couples in and around Bhuj. It helped in giving a flying start to our Bhuj fertility clinic. In spite of the Covid19 pandemic, BFI Bhuj has successfully treated a large number of patients not only from Bhuj and surroundings but international patients also.</p>
-            </div>
-            <div className='mt-4'>
-                <p className='text-gray-500'>The excellent success rate at Bhuj has boosted the confidence of patients and the clinic is touching new heights of success every day. In a very short span, BFI, IVF hospital in Bhuj has treated the most advanced and most difficult cases successfully like, TESA, PESA very poor sperm or egg count, severe endometriosis, fibroids etc.</p>
-            </div>
-            <div className='mt-6 p-12 text-center bg-[rgb(236,72,153)]'>
-                <p className='text-slate-100 text-xl'>A qualified, expert and experienced team is working relentlessly to help each and every couple inhering the same philosophy policies and culture. The mother centre also provides all out and all-around support, may it be clinical management of the patients, IVF lab and related services, counselling or grievance redressal.</p> 
-            </div>
-            <div className='mt-4'>
-                <p  className='text-gray-500'>BFI Bhuj is located at the most prime, peaceful, well connected medical hub of Bhuj where BFI provides avant-garde comfort and privacy. A scientifically designed and meticulously crafted facility matches the international standards of technology and care. Every attention is paid to the smallest things and finer details to deliver the best success to every couple.</p>
-            </div>
-            <div className='mt-4'>
-                <p  className='text-gray-500'>BFI Bhuj will truly live up to your expectation and promises to make your treatment Simple, Safe, Smart and Successful.</p>
-            </div>
-            <div className='mt-4'>
-                <p  className='text-gray-500'>Bhuj BFI is working with full Covid19 protection protocols. Come, discover the joy of parenthood waiting at your doorsteps.</p>
-            </div>
+            <div className='container max-w-[1280px] mx-auto mt-20'>
+                <div className='flex flex-wrap'>
+                    <div className='w-full lg:w-1/2 mb-8 gap-4'>
+                        <div className='text-[#009290] text-xl p-4 text-justify mt-12'>
+                            <p>Located in Bhuj, Kutch, Spandan Maternity Home in collaboration with most reputed Bavishi fertility Institute & IVF Centre stands as a beacon of comprehensive women's healthcare. Under the esteemed leadership of Dr Surbhi Vegad, a top-rated gynaecologist in Bhuj Kutch, our centre offers a diverse range of services, from routine deliveries to complex gynaecological surgeries.
+</p>
+                        </div>
+                        <div className='mt-4 pl-4 pr-8 text-justify'>
+                            <p className='text-gray-500 text-lg'>Specializing in advanced infertility solutions, our IVF centre in Bhuj excels in treatments like IVF, ICSI, and Donor Oocyte programs. Notably, male infertility treatments such as TESE, TESA, PESA, and Micro TESE are also routinely administered, showcasing our expertise in holistic reproductive care.
+</p>
+                        </div>
+                       
+                    </div>
+                    <div className='w-full lg:w-1/2'>
+                        {/* Replace the image with your actual image */}
+                        <img src="/images/ivfimg.jpeg" alt="Image" className="w-full h-[500px] rounded-2xl" />
+                    </div>
+                </div>
            </div>
+           <div className="flex justify-center bg-white p-16 mt-8 mb-8 bg-[url('/Images/parallax-lab-image.jpg')] bg-fixed">
+                    <div className="p-4 text-center  w-[75%] rounded-2xl">
+                        <p className="text-gray-600 text-xl">
+                            A qualified, expert and experienced team is working relentlessly to help each and every couple inhering the same philosophy policies and culture. The mother centre also provides all out and all-around support, may it be clinical management of the patients, IVF lab and related services, counselling or grievance redressal.
+                        </p> 
+                    </div>
+                </div>
            <div className="flex">
-                <div className="w-[50%]">
+                <div className="w-[40%]">
                     <Image
                         src="/images/ivfcenter.jpg"
                         width={500}
                         height={200}
                         alt="Picture of the author"
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full rounded-br-2xl rounded-tr-2xl"
                     />
                 </div>
-                <div className="w-[50%] p-16 bg-white flex flex-col justify-center">
-                    <p className='text-[rgb(236,72,153)] text-4xl'>Introducing Bavishi Fertility Institute (BFI) - An IVF Center in Bhuj</p>
-                    <p className='text-gray-500 mt-8'>We work with the principles of confidentiality, responsibility and professionalism. We are building families with technology and trust. Our state-of-the-art reproductive medicine facilities / Fertility clinics – provide highly individualized, customized, personalized treatment with a holistic and minimalistic approach, since 1986.</p>
-                    <p className='text-gray-500 mt-8'>As a leading IVF clinic in Bhuj, founded and led by the well-known experts of Bavishi family / Dr Himanshu Bavishi & Dr Falguni Bavishi, all BFI clinics offer meticulous attention of the highest order in a pleasant and avant-garde environment to make your treatment Simple, Safe, Smart and Successful.</p>
-                    <button className='pt-4 pb-4 pl-8 pr-8 w-[30%] border-2 rounded-2xl border-[rgb(236,72,153)] text-[rgb(236,72,153)] mt-8'>Read More</button>
+                <div className="w-[60%] p-8 bg-white flex flex-col justify-center">
+                    <p className='text-[rgb(236,72,153)] text-3xl'>Highlights of Our IVF Centre in Bhuj</p>
+                    <p className='text-gray-500 mt-8'><span className='text-slate-800 font-bold'>1. Expertise :</span>Our seasoned team comprises board-certified fertility specialists, embryologists, and reproductive endocrinologists, ensuring unparalleled care for male and female infertility, recurrent miscarriages, and genetic issues.</p>
+                    <p className='text-gray-500 mt-4'><span className='text-slate-800 font-bold'>2. Cutting-Edge Facilities : </span>Equipped with state-of-the-art laboratories and surgical suites, we harness the latest in assisted reproductive technologies, including preimplantation genetic testing (PGT) and cryopreservation.</p>
+                    <p className='text-gray-500 mt-4'><span className='text-slate-800 font-bold'>3. Holistic Services : </span>From fertility assessments and ovulation induction to IUI and minimally invasive surgeries, we offer a wide array of services tailored to individual needs.</p>
+                    <p className='text-gray-500 mt-4'><span className='text-slate-800 font-bold'>4. Personalized Approach : </span>Recognizing the uniqueness of each patient, Dr. Surabhi and her team emphasize bespoke treatment plans aligned with your medical history and reproductive aspirations.</p>
+                    <p className='text-gray-500 mt-4'><span className='text-slate-800 font-bold'>5. Emotional Support : </span>Infertility can be emotionally taxing. Hence, we prioritize a supportive environment, offering counselling and compassionate care throughout your fertility journey.</p>
+                    <p className='text-gray-500 mt-4'><span className='text-slate-800 font-bold'>6. Impressive Success Rates : </span> While outcomes can vary, our track record in aiding couples towards successful pregnancies remains commendable, underlining our commitment to excellence in IVF in Kutch.</p>
+                    <p className='text-gray-500 mt-4'><span className='text-slate-800 font-bold'>7. Confidentiality Assured : </span>Upholding the highest standards of privacy, we ensure that all patient information remains strictly confidential.</p>
                 </div>
             </div>
-
             <div className='container max-w-[1280px] mx-auto mt-14'>
                 <p className='text-[rgb(236,72,153)] text-2xl text-center'>Why Choose Bavishi Fertility Institute as Your IVF Center in Bhuj?</p>
                 <p className='text-gray-500 mt-8 text-center'>We believe that every woman is unique, therefore every fertility treatment shall be too. Looking for proven track record cutting edge technology, honest opinions, value for money, highest success chance – All under one roof? Look no further. Your search is over. That is BFI!</p>
-                </div>
-                <div className='mt-8  bg-[rgb(253,239,226)] pb-4'>
+            </div>
+            <div className='mt-8  bg-[rgb(253,239,226)] pb-4'>
                 <div className='container max-w-[1280px] mx-auto mt-14 mb-14'>
-                    <p className='text-[rgb(236,72,153)] text-2xl text-center pt-8'>Our specialisations</p>
+                    <p className='text-[rgb(236,72,153)] text-3xl text-center pt-8'>Our specialisations</p>
                     <p className='text-gray-500 mt-4 text-center'>Any problem – the best solution – Under one roof = BFI! Focused, targeted and tailored treatment for every couple.</p>
                     <div className="grid grid-rows-2 grid-flow-col gap-4">
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -97,8 +85,8 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500">
+                                <p className="text-center text-s">Male Infertility</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -110,8 +98,8 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500 ">
+                                <p className="text-center ">Female Infertility</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -123,8 +111,8 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500 ">
+                                <p className="text-center ">Advance technique</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -136,8 +124,8 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Preimplantation Genetic Testing</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -149,8 +137,8 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Intra Uterine Insemination - IUI</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -162,8 +150,8 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">IVF</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
@@ -175,217 +163,191 @@ export default function About() {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Fertility Preservation</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
                             <div>
                                 <Image
-                                    src="/images/ivf1.png"
+                                    src="/images/ivf8.png"
                                     width={100}
                                     height={100}
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Semen donation</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
                             <div>
                                 <Image
-                                    src="/images/ivf2.png"
+                                    src="/images/ivf9.png"
                                     width={100}
                                     height={100}
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Egg donation Surrogacy</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
                             <div>
                                 <Image
-                                    src="/images/ivf3.png"
+                                    src="/images/ivf10.png"
                                     width={100}
                                     height={100}
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Embryo Donation / Embryo freezing</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
                             <div>
                                 <Image
-                                    src="/images/ivf4.png"
+                                    src="/images/ivf11.png"
                                     width={100}
                                     height={100}
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
-                            </div>
-                        </div>
-                        <div className=" rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
-                            <div>
-                                <Image
-                                    src="/images/ivf5.png"
-                                    width={100}
-                                    height={100}
-                                    alt="Picture of the author"
-                                />
-                            </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
-                            </div>
-                        </div>
-                        <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center0">
-                            <div>
-                                <Image
-                                    src="/images/ivf6.png"
-                                    width={100}
-                                    height={100}
-                                    alt="Picture of the author"
-                                />
-                            </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Fibroids - Endometriosis</p>
                             </div>
                         </div>
                         <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
                             <div>
                                 <Image
-                                    src="/images/ivf7.png"
+                                    src="/images/ivf12.png"
                                     width={100}
                                     height={100}
                                     alt="Picture of the author"
                                 />
                             </div>
-                            <div className="mt-1 " style={{ color: 'rgb(1, 146, 144)'}}>
-                                <p className="text-center font-bold">Aetna</p>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Ovary rejuvenation – PRP Stem cell</p>
+                            </div>
+                        </div>
+                        <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
+                            <div>
+                                <Image
+                                    src="/images/ivf13.png"
+                                    width={100}
+                                    height={100}
+                                    alt="Picture of the author"
+                                />
+                            </div>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">High-Risk Obstetrics</p>
+                            </div>
+                        </div>
+                        <div className="rounded-lg h-auto w-screen/7 p-4 flex flex-col justify-center items-center">
+                            <div>
+                                <Image
+                                    src="/images/ivf14.png"
+                                    width={100}
+                                    height={100}
+                                    alt="Picture of the author"
+                                />
+                            </div>
+                            <div className="mt-1 text-gray-500" >
+                                <p className="text-center ">Maternity Services</p>
                             </div>
                         </div>
                         </div>
-                        <div className='flex justify-center'>
-                        <button className='flex justify-center pt-4 pb-4 pl-6 pr-6 w-[20%] text-xl border-2 rounded-2xl border-[rgb(236,72,153)] text-[rgb(236,72,153)] mt-8 bg-white hover:bg-[rgb(236,72,153)] hover:text-white duration-300'>View More</button>
-
-                        </div>
+                        
                     </div>  
                 </div>
-                <div className='bg-white'>
-                   <div className='container max-w-[1280px] mx-auto mb-14'>
-                        <p className='text-[rgb(236,72,153)] text-2xl text-center pt-8'>Our IVF Specialists in Bhuj</p>
-                        <div className='flex justify-center'>
+                <div className='bg-[#F4F6F7]'>
+                   <div className='container max-w-[1280px] mx-auto p-8'>
+                        {/* <p className='text-[rgb(236,72,153)] text-xl text-center pt-8'>Our IVF Specialists in Bhuj</p> */}
+                        <div className="flex">
+                        <div className="flex justify-center border-2 rounded-full overflow-hidden ml-12 border-0">
                             <Image
-                                src="/images/surabhivegad.jpg"
-                                width={300}
-                                height={300}
-                                alt="Picture of the author"   
+                                src="/images/Dr. surbhi vegad.png"
+                                width={500}
+                                height={100}
+                                alt="Picture of the author"
                             />
                         </div>
-                        <div className='flex justify-center text-xl mt-4 font-bold text-[rgb(1,146,144)]'>
-                            <p className='text-center'>Dr. Surbhi Vegad <br />MD Bhuj</p>
-                        </div>
+                        <div className="mt-6">
+                            <div className="text-left ">
+                                <p className='ml-8 mt-4 text-[rgb(1,146,144)] text-3xl'>Dr. Surabhi Vegad – The Best Fertility & IVF Doctor</p>
+                                <p className='text-lg ml-8 text-[rgb(1,146,144)]'>Leading Gynecologist in Bhuj, Kutch</p>
 
-                        <p className='text-[rgb(236,72,153)] text-2xl text-center pt-12'>Our Staff at Bhuj centre</p>
-                        <div className="grid grid-rows-1 grid-flow-col gap-4 mt-8">
-                        <div className="rounded-lg border-2 pb-0 h-auto w-screen/5 p-4 flex flex-col justify-center items-center">
-                            <div>
-                                <Image
-                                    src="/images/staff1.jpg"
-                                    width={200}
-                                    height={200}
-                                    alt="Picture of the author"
-                                />
+                                <p className='text-base p-8 leading-8 text-[#9F7198]'>Dr. Surabhi Vegad stands as a premier Obstetrician and Gynecologist in Bhuj, Kutch, specializing in state-of-the-art treatments for a wide range of gynaecological issues. With extensive experience spanning over 20 years, Dr. Vegad is a trailblazer in women's healthcare, consistently advancing research and patient care.</p>
                             </div>
                         </div>
-                        <div className="rounded-lg border-2 pb-0 h-auto w-screen/5 p-4 flex flex-col justify-center items-center">
-                            <div>
-                                <Image
-                                    src="/images/staff2.jpg"
-                                    width={200}
-                                    height={200}
-                                    alt="Picture of the author"
-                                />
-                            </div>
-                        </div>
-                        <div className="rounded-lg border-2 pb-0 h-auto w-screen/5 p-4 flex flex-col justify-center items-center">
-                            <div>
-                                <Image
-                                    src="/images/staff3.jpg"
-                                    width={200}
-                                    height={200}
-                                    alt="Picture of the author"
-                                />
-                            </div>
-                        </div>
-                        <div className="rounded-lg border-2 pb-0 h-auto w-screen/5 p-4 flex flex-col justify-center items-center">
-                            <div>
-                                <Image
-                                    src="/images/staff4.jpg"
-                                    width={200}
-                                    height={200}
-                                    alt="Picture of the author"
-                                />
-                            </div>
-                        </div>
-                        <div className="rounded-lg border-2 pb-0 h-auto w-screen/5 p-4 flex flex-col justify-center items-center">
-                            <div>
-                                <Image
-                                    src="/images/staff5.jpg"
-                                    width={200}
-                                    height={200}
-                                    alt="Picture of the author"
-                                />
-                            </div>
-                        </div>
-                        </div>
-                        <p className='text-[rgb(236,72,153)] text-3xl text-center pt-12'>FAQ</p>
-                        <Accordion variant="shadow" className='mt-8 ml-0'>
-                            <AccordionItem key="1" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' title="01. What all should I carry for my first appointment?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="2" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 2" title="02. How is the Emergency Department staffed?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="3" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 3" title="03. What if my patient does not have a matched sibling?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="4" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' title="04. What all should I carry for my first appointment?" aria-label="Accordion 1">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="5" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 2" title="05. How is the Emergency Department staffed?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="6" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 3" title="06. What if my patient does not have a matched sibling?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="7" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' title="07. What all should I carry for my first appointment?" aria-label="Accordion 1">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="8" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 2" title="08. How is the Emergency Department staffed?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="9" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 3" title="09. What if my patient does not have a matched sibling?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="10" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' title="10. What all should I carry for my first appointment?" aria-label="Accordion 1">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="11" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 border-2' aria-label="Accordion 2" title="11. How is the Emergency Department staffed?">
-                                {defaultContent}
-                            </AccordionItem>
-                            <AccordionItem key="12" className='text-[#927fba] bg-white rounded-3xl p-4 mb-4 ' aria-label="Accordion 3" title="12. What if my patient does not have a matched sibling?">
-                                {defaultContent}
-                            </AccordionItem>
-                        </Accordion>  
                     </div>
-                    
+                </div>
+                <div className='bg-white'>
+                    <div className='container max-w-[1280px] mx-auto mb-14 '>
+                        <p className='text-[rgb(236,72,153)] text-3xl text-center pt-12'>FAQ</p>
+                        <div className='flex'>
+                        <Accordion className="grid grid-cols-1 gap-8 mt-8 border-0">
+                            <AccordionItem key="1"  className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" title="1. What Insurances Do You Accept?">
+                                    {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="2" className="p-8  flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 2" title="2. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="3" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 3" title="3. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="4" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 4" title="4. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="5" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 5" title="5. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="6" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 6" title="6. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="7" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 7" title="7. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="8" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 8" title="8. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                        </Accordion>
+                        <Accordion className="grid grid-cols-1 gap-8 mt-8">
+                        <AccordionItem 
+                                key="9"  
+                                className="p-8 flex flex-col justify-left items-left border-0 text-white bg-[rgb(0,110,143)]" 
+                                aria-label="Accordion 9" 
+                                title={<div className="border-none">1. What Insurances Do You Accept?</div>}
+                            >
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="10" className="p-8  flex flex-col justify-left items-left border-none text-white bg-[rgb(0,110,143)]" aria-label="Accordion 10" title="2. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="11" className="p-8 flex flex-col justify-left items-left border-none text-white bg-[rgb(0,110,143)]" aria-label="Accordion 11" title="3. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="12" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 12" title="4. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="13" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 13" title="5. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="14" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 14" title="6. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="15" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 15" title="7. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                            <AccordionItem key="16" className="p-8 flex flex-col justify-left items-left text-white bg-[rgb(0,110,143)]" aria-label="Accordion 16" title="8. What Insurances Do You Accept?">
+                                {defaultContent}
+                            </AccordionItem>
+                        </Accordion>
+                    </div>
+                </div>
+            </div>
                 </div>
                         
 

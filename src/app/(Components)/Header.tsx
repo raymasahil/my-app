@@ -109,7 +109,7 @@ const TreatmentDropdown: React.FC = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <span>Treatments</span>
+            <Link href="/Treatments" className="text-purple-900" onClick={closeMenu}><span>Treatments</span></Link>
             <ChevronDownIcon className="w-5 h-5 ml-1" />
           </Popover.Button>
 
@@ -131,35 +131,79 @@ const TreatmentDropdown: React.FC = () => {
               <div className="overflow-hidden rounded-lg rounded-t-none border-t-4 border-pink-500 shadow-lg ring-1 ring-black ring-opacity-5">
                 {/* Popover Content */}
                 <div className="flex px-2 py-3 bg-white text-black">
+                {/* First part */}
+                <div className="w-1/2">
                   <ul className="space-y-2 text-sm">
                     <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
-                      <Link href="/Gynecology" onClick={closeMenu}>
-                        Gynecology
+                      <Link href="/Treatments/Antenatal-Care" className="text-purple-900" onClick={closeMenu}>
+                      Antenatal Care & Postnatal Care
                       </Link>
                     </li>
                     <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
-                      <Link href="/MaleInfertility" onClick={closeMenu}>
-                        Male Infertility
+                      <Link href="/Treatments/Preconception-Counselling" className="text-purple-900" onClick={closeMenu}>
+                      Preconception Counselling
                       </Link>
                     </li>
                     <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
-                      <Link href="/LaparoscopySurgery" onClick={closeMenu}>
-                        Laparoscopy Surgery
+                      <Link href="/Treatments/Cancer-Screening" className="text-purple-900" onClick={closeMenu}>
+                      Cancer Screening
                       </Link>
                     </li>
                     <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
-                      <Link href="/Maternity" onClick={closeMenu}>
-                        Maternity
+                      <Link href="/Treatments/Menstrual-Issues" className="text-purple-900" onClick={closeMenu}>
+                      Menstrual Issues
                       </Link>
                     </li>
                     <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
-                      <Link href="/WomenInfertility" onClick={closeMenu}>
-                        Women Infertility
+                      <Link href="/Treatments/Uro" className="text-purple-900" onClick={closeMenu}>
+                      Uro - Gynecological Problems
+                      </Link>
+                    </li>
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/Sexually-Transmitted-Disease" className="text-purple-900" onClick={closeMenu}>
+                      Sexually Transmitted Disease
                       </Link>
                     </li>
                   </ul>
-                  
                 </div>
+                {/* Second part */}
+                <div className="w-1/2">
+                  <ul className="space-y-2 text-sm">
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/Infertility-Work-up" className="text-purple-900" onClick={closeMenu}>
+                      Infertility Work-up
+                      </Link>
+                    </li>
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/Family-Planning" className="text-purple-900" onClick={closeMenu}>
+                      Family Planning
+                      </Link>
+                    </li>
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/Laparoscopic" className="text-purple-900" onClick={closeMenu}>
+                      Laparoscopic & Hysteroscopic Surgeries
+                      </Link>
+                    </li>
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/Menopausal-Problems" className="text-purple-900" onClick={closeMenu}>
+                      Menopausal Problems
+                      </Link>
+                    </li>
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/Adolescent-Health" className="text-purple-900" onClick={closeMenu}>
+                      Adolescent Health Counselling
+                      </Link>
+                    </li>
+                    <li className="hover:text-pink-600 hover:bg-gray-100 hover:font-semibold rounded-full px-3 py-2 hover:transition hover:duration-300">
+                      <Link href="/Treatments/IVF-Speciality" className="text-purple-900" onClick={closeMenu}>
+                      IVF Speciality
+                      </Link>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
               </div>
             </Popover.Panel>
           </Transition>
@@ -203,7 +247,7 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center">
             <div className="text-pink-500 !z-[999]">
               <Link href="/">
-                <Image src="./SVG/Spandan-Logo-Text-Side.svg" alt="Spandan Maternity" width={200} height={64} />
+                <Image src="../SVG/Spandan-Logo-Text-Side.svg" alt="Spandan Maternity" width={200} height={64} />
               </Link>
             </div>
             <div className="flex text-black !z-[999]">
@@ -232,36 +276,36 @@ const Header: React.FC = () => {
                   </div>
                 </li>
                 <li>
-                  <Link href="/About" onClick={closeMenu}>
+                  <Link href="/About" className="text-purple-900" onClick={closeMenu}>
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Insurance" onClick={closeMenu}>
+                  <Link href="/Insurance" className="text-purple-900" onClick={closeMenu}>
                     Insurance
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Facilities" onClick={closeMenu}>
+                  <Link href="/Facilities" className="text-purple-900" onClick={closeMenu}>
                     Facilities
                   </Link>
                 </li>
-                <li>
+                <li className="text-purple-900">
                   <TreatmentDropdown />
                 </li>
                 
                 <li>
-                  <Link href="/About" onClick={closeMenu}>
+                  <Link href="/About" className="text-purple-900" onClick={closeMenu}>
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Contact" onClick={closeMenu}>
+                  <Link href="/Contact" className="text-purple-900" onClick={closeMenu}>
                      Contact 
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/" className="text-purple-900" onClick={closeMenu}>
                     <button className="mt-0 pt-2 pb-2 pl-4 pr-4 rounded-3xl text-white bg-pink-500 flex items-center">
                       IVF Center
                     </button>

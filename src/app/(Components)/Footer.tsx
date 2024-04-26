@@ -5,10 +5,10 @@ const Footer = () =>{
     return(
         <div className="bg-[#27115f] pt-14 ">
 
-            <div className="container mx-auto max-w-[1280px] flex justify-between items-center space-x-10 text-white mt-24 mb-24">
+            <div className="container mx-auto max-w-[1280px] flex justify-between items-center space-x-10 text-white mt-8 mb-24">
                 <div className="w-1/2">
-                    <Image className="mb-5" src="/Images/Spandan-white.png" width={200} height={200} alt="Spandan Maternity Home" />
-                    <p className="w-52">Empowering Her Health. Every Step of the Way</p>
+                    <Image className="mb-5" src="/Images/Spandan-white.png" width={250} height={250} alt="Spandan Maternity Home" />
+                    {/* <p className="w-52">Empowering Her Health. Every Step of the Way</p> */}
                 </div>
                 <div className="flex w-1/2 space-x-9">
                     <div className="flex w-full items-center justify-center bg-pink-600 p-4 rounded">
@@ -39,21 +39,21 @@ const Footer = () =>{
                 </div>
             </div>
 
-           <div className="container mx-auto max-w-[1280px] flex justify-between space-x-10 mb-32 text-white">
+           <div className="container mx-auto max-w-[1280px] flex justify-between space-x-10 mb-24 text-white">
                 <div className="w-1/6">
-                    <h3 className="text-[#ffffff80] text-xl font-bold mb-6">Service Lines</h3>
+                    <h3 className="text-[#ffffff80] text-xl font-bold mb-6">Treatments</h3>
                     <ul className="text-sm space-y-4">
-                        <li>Gynecology</li>
-                        <li>Preventive Care</li>
-                        <li>Obstetrics</li>
-                        <li>Surgery</li>
+                        <li>Gynaecology</li>
+                        <li>Male Infertility</li>
+                        <li>Laparoscopy Surgery</li>
+                       
                     </ul>
                 </div>
                 <div className="w-2/6">
                     <ul className="text-sm mt-12 space-y-4">
-                        <li>Dermatology</li>
-                        <li>Pregnancy</li>
-                        <li>Mental Wellbeing</li>
+                        <li>Women Infertility</li>
+                        <li>Maternity</li>
+                        <li>IVF Center</li>
                     </ul>
                 </div>
                 <div className="w-1/2">
@@ -68,6 +68,12 @@ const Footer = () =>{
                         </div>
                         <div className="text-base"> <Link href="#"> View Map </Link> </div>
                     </div>
+                    <div className="flex mt-8 items-center space-x-6">
+                    <span> <Image src="/SVG/facebook-app-symbol.svg" alt="Instagram" width={15} height={15} /> </span>
+                    <span> <Image src="/SVG/instagram-icon.svg" alt="Instagram" width={15} height={15} /> </span>
+                    <span> <Image src="/SVG/twitter-icon.svg" alt="Instagram" width={15} height={15} /> </span>
+                    <span> <Image src="/SVG/whatsapp-x-icon.svg" alt="Instagram" width={15} height={15} /> </span>
+                </div>
                 </div>
                 
             </div>
@@ -75,12 +81,9 @@ const Footer = () =>{
             <div className="w-full border-t !border-white mt-10 mb-10"></div>
 
             <div className="max-w-[1280px] mx-auto flex justify-between text-white pb-14">
-                <div>© Spandan Maternity Home 2024</div>
-                <div className="flex space-x-6">
-                    <span> <Image src="/SVG/facebook-app-symbol.svg" alt="Instagram" width={20} height={20} /> </span>
-                    <span> <Image src="/SVG/instagram-icon.svg" alt="Instagram" width={20} height={20} /> </span>
-                    <span> <Image src="/SVG/twitter-icon.svg" alt="Instagram" width={20} height={20} /> </span>
-                    <span> <Image src="/SVG/whatsapp-x-icon.svg" alt="Instagram" width={20} height={20} /> </span>
+                <div>2024 © Spandan Maternity Home. All rights reserved. </div>
+                <div className="flex text-white">
+                    <p>Proudly Powered By:  <Link href="https://teque7.com/">TEQUE7</Link></p>
                 </div>
             </div>
             

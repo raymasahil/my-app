@@ -9,22 +9,20 @@ export default function About() {
 
     return (
         <div className="main-content">
-            <div className='lg mx-auto relative'>
-                <Image
-                    src="/images/downloadbanner.jpg"
-                    width={500}
-                    height={200}
-                    alt="Picture of the author"
-                    className="w-full h-auto"
-                />
-                <h1 className="absolute bottom-20 left-0 text-white px-8 py-2 text-6xl">FAQs</h1>
-                <p className="absolute bottom-10 left-0 text-white px-8 py-2">
-                    <Link href="/">Home</Link> &gt; <Link href="/FAQs">FAQs</Link>
-                </p>
+            <div className="relative w-full">
+                <div className="bg-[url('/Images/hospitalbanner2.jpg')] bg-cover bg-center min-h-96"></div>
+                <div className="absolute bottom-0 left-0 right-0" style={{ zIndex: '1', backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.1), #241B19 200%)', height: '100%' }}></div>
+
+                <div className='container max-w-[1280px] mx-auto relative z-10'>
+                    <p className='absolute bottom-20 text-white px-8 py-2 text-6xl'>FAQs</p>
+                    <p className="absolute bottom-10 text-white px-8 py-2">
+                        <Link href="/">Home</Link> &gt; <Link href="/FAQs">FAQs</Link>
+                    </p>
+                </div>
             </div>
-            <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
+            <div className='container max-w-[1280px] mx-auto mt-20 mb-24'>
                 <div className='flex justify-center'>
-                    <p className='text-center text-white bg-[rgb(245,116,171)] box-border w-48 p-2'>COMMON QUERIES</p>
+                    <p className='text-center text-white bg-[rgb(245,116,171)] box-border w-48 p-2 rounded-2xl'>COMMON QUERIES</p>
                 </div>
                 <p className='text-4xl text-center mt-8' style={{ color: 'rgb(1, 146, 144)'}}>Frequently Asked Questions</p>
               <div className='flex'>

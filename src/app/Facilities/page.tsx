@@ -1,268 +1,292 @@
 'use client';
 import Image from 'next/image'
 import Link from 'next/link'
-import MySwiper from '@/app/(Components)/MySwiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLeaf, faStethoscope, faAmbulance, faQuoteLeft, faQuoteRight, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import { faLeaf, faStethoscope, faAmbulance, faQuoteLeft, faQuoteRight, faPhoneVolume, faAlignRight, faArrowRightArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 export default function Facilities() {
-    return(
+    return (
         <div className="main-content">
-            <div className='lg mx-auto relative'>
-                <Image
-                    src="/images/downloadbanner.jpg"
-                    width={500}
-                    height={200}
-                    alt="Picture of the author"
-                    className="w-full h-auto"
-                />
-                <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
-                        <p className='absolute bottom-20  text-white px-8 py-2 text-6xl'>Facilities</p>
-                        <p className="absolute bottom-10 text-white px-8 py-2">
-                            <Link href="/">Home</Link> &gt; <Link href="/Facilities">Facilities</Link>
+            <div className="relative w-full">
+                <div className="bg-[url('/Images/hospitalbanner2.jpg')] bg-cover bg-center min-h-96"></div>
+                <div className="absolute bottom-0 left-0 right-0" style={{ zIndex: '1', backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.1), #241B19 200%)', height: '100%' }}></div>
+
+                <div className='container max-w-[1280px] mx-auto relative z-10'>
+                    <p className='absolute bottom-20 text-white px-8 py-2 text-6xl'>Facilities</p>
+                    <p className="absolute bottom-10 text-white px-8 py-2">
+                        <Link href="/">Home</Link> &gt; <Link href="/Facilities">Facilities</Link>
+                    </p>
+                </div>
+            </div>
+            <div className='container max-w-[1280px] mx-auto relative z-10 pt-14 pb-14'>
+                <div className='flex justify-center'>
+                    <p className='text-6xl text-[#581C87]'>Our Facilities</p>
+                </div>
+            </div>
+            <div className='pb-20 relative'>
+                    <div style={{
+                        position: 'relative',
+                        width: '1010px',
+                        height: '450px',
+                        zIndex: '1',
+                        display: 'block',
+                        overflow: 'hidden' 
+                    }}>
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            // backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #F5F5F5 200%)',
+                            zIndex: '1',
+                        }} />
+                        <Image
+                            src="/images/facilities7.jpg"
+                            width={1010}
+                            height={550}
+                            alt="Main Image"
+                          
+                            style={{
+                                position: 'absolute',
+                                left: 0,
+                                top: 0,
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                zIndex: '0',
+                                overflow: 'hidden' 
+                            }}
+                        />
+                    </div>
+                    <div className='container max-w-[1280px] mx-auto relative z-10'>
+                    <div style={{ position: 'absolute', right: '0', bottom: '20%', transform: 'translateY(-320%)', marginRight: '10px' }}>
+                        <p className="text-black text-sm text-center text-[#581C87]">
+                            If You Need Urgent Care,<br></br> Simply Contact Our 24 Hour Emergency Hotline.<br></br>
+                            <span className='text-xl text-[#EC4899]'>Your Health is Our Priority.</span>
                         </p>
                     </div>
-            </div>
-            {/* main content start */}
-                    <div className='container max-w-[1280px] mx-auto mt-14 mb-24'>
-                        <div className="flex">
-                            <div className="w-[25%] h-auto border-2 rounded-lg">
-                                <p className="p-8 text-center text-[rgb(236,72,153)] text-3xl ">Available Facilities</p>
-                                <ul className="list-disc pl-10 mb-0">
-                                    <li className="mb-2 text-[rgb(88,28,135)]">3D Live 4D & Colored sonography</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Laparoscopy Center</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Adolescent Counselling</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Stretcher Lift Facility</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">3D Live 4D & Colored sonography</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Laparoscopy Center</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Adolescent Counselling</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Stretcher Lift Facility</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">3D Live 4D & Colored sonography</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Adolescent Counselling</li>
-                                    <li className="mb-2 text-[rgb(88,28,135)]">Stretcher Lift Facility</li>
-                                </ul>
-                            </div>
-
-                            <div className='w-[75%] h-[50%]'>
-                            <Swiper
-                                spaceBetween={30}
-                                pagination={{
-                                clickable: true,
-                                }}
-                                modules={[Pagination]}
-                                className="Testimonials"
-                            >
-                                <SwiperSlide className='ml-4'>
-                                    <Image
-                                        src="/images/1.jpg"
-                                        width={300}
-                                        height={300}
-                                        alt="Picture of the author"
-                                        className="w-full"
-                                    />
-                                </SwiperSlide>
-  
-
-
-                                <SwiperSlide >
-                                    <Image
-                                        src="/images/2.jpg"
-                                        width={300}
-                                        height={300}
-                                        alt="Picture of the author"
-                                        className="w-full"
-                                    />
-                                
-
-                                </SwiperSlide>
-
-
-                                <SwiperSlide>
-                                    <Image
-                                        src="/images/3.jpg"
-                                        width={1200}
-                                        height={300}
-                                        alt="Picture of the author"
-                                    />
-                                
-
-                                </SwiperSlide>
-                  
-                </Swiper>
-
-              </div>
-            </div>
-                    <div className='w-full mt-14'>
-                            <p className="text-left text-2xl" style={{ color: 'rgb(1, 146, 144)'}}>FACILITIES</p>
-                            <div className="w-full h-1 bg-gray-300"></div>
-                    </div>
-                    <div className="grid grid-cols-4 gap-4 mt-8">
-                        <div className="col-span-1">
-                        <Image
-                            src="/images/f1.png"
-                            width={305}
-                            height={250}
-                            alt="Picture of the author"
-                            className='rounded-xl'
-                        />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)' }}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f2.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f3.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f5.png"
-                                width={310}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f1.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f2.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f3.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f5.png"
-                                width={310}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f1.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f2.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f3.png"
-                                width={305}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        <div className="col-span-1">
-                            <Image
-                                src="/images/f5.png"
-                                width={310}
-                                height={250}
-                                alt="Picture of the author"
-                                className='rounded-xl'
-                            />
-                            <p className='text-center mt-2' style={{ color: 'rgb(1, 146, 144)'}}>RECEPTION</p>
-                        </div>
-                        
-                    </div>
-                     
-                    {/* <div className="box-border h-auto w-full p-4 border-2 flex">
-                        <div>
-                            <img width={540} height={300} src="images/Surabhi-Bg.png" alt="Dr. Surabhi Vegad"/>
-                        </div>
-                        <div className="ml-4">
-                            <h1 className="text-xl text-center font-bold text-green-500" style={{ color: 'rgb(1, 146, 144)'}}>Dr. Surabhi Vegad</h1>
-                            <div className="box-border h-auto p-4">
-                                <div className="flex items-start mt-5">
-                                    <p className="box-border w-20 font-bold mr-4" style={{ color: 'rgb(1, 146, 144)'}}>Speciality:</p>
-                                    <p className="flex-grow">IVF expert, Laparoscopic Surgeon, High Risk Pregnancy Care, Advanced</p>
-                                </div>
-                                <div className="flex items-start mt-2">
-                                    <p className=" box-border w-20 font-bold mr-4" style={{ color: 'rgb(1, 146, 144)'}}>Education:</p>
-                                    <ul className="flex-grow">
-                                        <li>Dip in Cosmetic Gynecology Training, Florida, USA October 2016</li>
-                                        <li>Dip in Laparoscopic Gynecology, Kiel, Germany October 2016</li>
-                                        <li>Dip in Laparoscopic Gynecology, Kiel, Germany October 2016</li>
-                                    </ul>
-                                </div>
-                                <div className="flex items-start mt-2">
-                                    <p className=" box-border w-20 font-bold mr-4" style={{ color: 'rgb(1, 146, 144)'}}>Experience:</p>
-                                    <p className="w-20flex-grow">20 years</p>
-                                </div>
-                                <div className="flex items-start mt-2">
-                                    <p className="box-border w-20   font-bold mr-4" style={{ color: 'rgb(1, 146, 144)'}}>Available:</p>
-                                    <p className="flex-grow">Monday-Saturday</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div> */}
-
-
-
-
-
-                        
-                    </div>
                 </div>
-    )
+                    
+                <div style={{ marginTop: '80px', marginLeft: '120px', position: 'relative' }}>
+                <div className="navigation-buttons p-20 " style={{ position: 'absolute', top: '10%', left: '15%', transform: 'translate(-50%, -50%)', zIndex: 999 }}>
+                    <div className="swiper-button-prev">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 5L5 25L25 45" stroke="#581C87" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <p className='text-5xl text-[#581C87]' style={{ display: 'inline-block', margin: '0 20px' }}> View facilities </p>
+                    <div className="swiper-button-next">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 45L45 25L25 5" stroke="#581C87" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+            </div>
+            <div className='pb-36 relative' style={{ marginTop: '100px' }}>
+                <div style={{ position: 'absolute', overflow: 'hidden', width: '60%', bottom:0, right: 0 }}>
+                    <Swiper
+                        autoplay={true}
+                        loop={true}
+                        modules={[Autoplay, Navigation]}
+                        slidesPerView={3}
+                        spaceBetween={25}
+                        navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }}
+                    >
+                        <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/facilities2.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                               </SwiperSlide>
+                            <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/facilities3.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/facilities5.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/facilities6.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/facilities8.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/fac1.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide style={{ width: '350px', height: '350px' }}>
+                            <Image
+                                src="/images/facilities9.jpg"
+                                layout="fill" 
+                                objectFit="cover" 
+                                alt="First Image"
+                                className='rounded-2xl'
+                            />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
+        </div>
+
+                    {/* Second faciliti */}
+                    
+                    <div className='mt-28'>
+                        <div style={{
+                            position: 'relative',
+                            width: '1010px',
+                            height: '450px',
+                            zIndex: '1',
+                            display: 'block',
+                            overflow: 'hidden' 
+                        }}>
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                          
+                            zIndex: '1',
+                        }} />
+                        <Image
+                            src="/images/facilities4.jpg"
+                            width={1010}
+                            height={550}
+                            alt="Main Image"
+                            style={{
+                                position: 'absolute',
+                                left: 0,
+                                top: 0,
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                zIndex: '0',
+                                overflow: 'hidden' 
+                            }}
+                        />
+                    </div>
+                    <div className='container max-w-[1280px] mx-auto relative z-10'>
+                    <div style={{ position: 'absolute', right: '0', bottom: '20%', transform: 'translateY(-320%)', marginRight: '10px' }}>
+                        <p className="text-black text-sm text-center text-[#581C87]">
+                             Specializing in advanced infertility solutions, <br></br>
+                            <span className='text-xl text-[#EC4899]'>our IVF centre in Bhuj.</span>
+                        </p>
+                    </div>
+                    </div>
+                    <div className='container max-w-[1280px] mx-auto relative z-10 pt-14'>
+                        <div className='flex justify-center'>
+                            <p className='text-6xl text-[#581C87]'>IVF Center</p>
+                        </div>
+                        <div className="grid grid-cols-4 gap-4 mt-16">
+                            <div className=" h-auto rounded-2xl  w-screen/4 flex flex-col">
+                                <div>
+                                    <Image
+                                    src="/images/ivfcenter1.jpg"
+                                        width={450} 
+                                        height={200} 
+                                        alt="Picture of the author"
+                                        className='rounded-2xl'
+                                    />
+                                </div>
+                                <div>
+                                    <p className='text-center mt-4 text-xl text-[#895FAA]'>IVF CENTER</p>
+                                </div>
+                            </div>
+                        
+                            <div className="text-xl h-auto w-screen/4 flex flex-col justify-center ">
+                                <div>
+                                    <Image
+                                        src="/images/ivfcenter6.jpg"
+                                        width={450} 
+                                        height={200} 
+                                        alt="Picture of the author"
+                                        className='rounded-2xl'
+                                    />
+                                </div>
+                                <div>
+                                <p className='text-center mt-4 text-xl text-[#895FAA]'>IVF CENTER</p>
+                                </div>
+                                
+                            </div>
+                            <div className=" h-auto w-screen/4 flex flex-col justify-center">
+                                <div>
+                                    <Image
+                                    src="/images/ivfcenter3.jpg"
+                                        width={450} 
+                                        height={200} 
+                                        alt="Picture of the author"
+                                        className='rounded-2xl'
+                                    />
+                                </div>
+                                <div>
+                                <p className='text-center mt-4 text-xl text-[#895FAA]'>IVF CENTER</p>
+                                </div>
+                                
+                            </div>
+                            <div className="h-auto w-screen/4 flex flex-col justify-center">
+                                <div>
+                                    <Image
+                                    src="/images/ivfcenter5.jpg"
+                                        width={450} 
+                                        height={200} 
+                                        alt="Picture of the author"
+                                        className='rounded-2xl'
+                                    />
+                                </div>
+                                <div>
+                                <p className='text-center mt-4 text-xl text-[#895FAA]'>IVF CENTER</p>
+                                </div>
+                                
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+
+
+           
+        </div>
+    );
 }
